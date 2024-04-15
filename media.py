@@ -10,17 +10,20 @@ media = 0
 soma = 0
 
 #solicitando as notas ao usuario, com a conversão para inteiro
-primeira_nota = int(input("Informe a nota do primeiro bimestre"))
-segunda_nota = int(input("Informe a nota do segundo bimestre"))
-terceira_nota = int(input("Informe a nota do terceiro bimestre"))
-quarta_nota = int(input("Informe a nota do quarto bimestre"))
+#primeira_nota = int(input("Informe a nota do primeiro bimestre"))
+#segunda_nota = int(input("Informe a nota do segundo bimestre"))
+#terceira_nota = int(input("Informe a nota do terceiro bimestre"))
+#quarta_nota = int(input("Informe a nota do quarto bimestre"))
+
+for i in range(4):
+    nota = int(input('Informe a nota: '))
+    soma = soma+nota
 
 #calculando a media
-soma = primeira_nota + segunda_nota + terceira_nota + quarta_nota
+#soma = primeira_nota + segunda_nota + terceira_nota + quarta_nota
 media = soma/n
 
 #mostrando a media na tela
 print('-'*70)
-print f('A media das notas é {}')
+print (f'A media das notas é {media}')
 print('-'*70)
-
